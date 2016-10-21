@@ -1,6 +1,16 @@
+<?php
+
+if(isset($_SESSION["conectado"])){
+	
+		
+	
+
+
+?>
+
 <html>
 <head>
-	<title>Ejercicio 1 tema 7 HOLA ALE</title>
+	<title>Ejercicio 1 tema 7</title>
 	<style>
 
 	</style>
@@ -46,3 +56,11 @@
 ?>
 </body>
 </html>
+
+<?php
+}else{
+	header('Location: ../ej4t7.php');
+}
+
+
+?>

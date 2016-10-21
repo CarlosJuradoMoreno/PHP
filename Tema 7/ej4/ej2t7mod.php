@@ -1,6 +1,12 @@
+
+<?php
+	//INICIAMOS LA SESION, SI LA VARIABLE DE CONEXION EXISTE, ENTRA AL ARCHIVO, SI NO SE REDIRIGE
+	if(!isset($_SESSION["conectado"])){
+	
+?>
 <html>
 <head>
-	<title>Ejercicio 2 tema 7 </title>
+	<title>Ejercicio 2 tema 7</title>
 	<style>
 
 	</style>
@@ -58,3 +64,9 @@
 ?>
 </body>
 </html>
+
+<?php
+}else{
+	header('Location: ../ej4t7.php');
+}
+?>
